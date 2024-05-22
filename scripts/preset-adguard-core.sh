@@ -6,6 +6,6 @@ AGH_CORE=$(curl -sL https://api.github.com/repos/AdguardTeam/AdGuardHome/release
 
 # wget -qO- $AGH_CORE | tar xOvz > files/usr/bin/AdGuardHome/AdGuardHome
 # Temporary Fix
-wget -qO- https://github.com/AdguardTeam/AdGuardHome/releases/download/v0.107.47/AdGuardHome_linux_amd64.tar.gz | tar xOvz > files/usr/bin/AdGuardHome
+wget -qO- https://github.com/AdguardTeam/AdGuardHome/releases/download/v0.107.47/AdGuardHome_linux_amd64.tar.gz | tar xOvz > files/usr/bin
 
 chmod +x files/usr/bin/AdGuardHome
