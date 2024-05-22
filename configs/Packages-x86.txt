@@ -237,7 +237,7 @@ CONFIG_PACKAGE_luci-app-ttyd=y
 CONFIG_PACKAGE_luci-app-unblockneteasemusic=y
 CONFIG_PACKAGE_luci-app-upnp=y
 CONFIG_PACKAGE_luci-app-vlmcsd=y
-CONFIG_PACKAGE_luci-app-wireguard=y
+CONFIG_PACKAGE_luci-proto-wireguard=y
 CONFIG_PACKAGE_luci-app-wol=y
 CONFIG_PACKAGE_luci-app-zerotier=y
 CONFIG_PACKAGE_luci-app-uugamebooster=y
@@ -248,11 +248,14 @@ CONFIG_PACKAGE_luci-app-firewall=y
 CONFIG_PACKAGE_luci-app-mwan3=y
 CONFIG_PACKAGE_luci-app-mwan3helper=y
 CONFIG_PACKAGE_luci-app-ramfree=y
+CONFIG_PACKAGE_luci-app-turboacc=y
 CONFIG_PACKAGE_luci-app-turboacc_INCLUDE_OFFLOADING=y
 # CONFIG_PACKAGE_luci-app-turboacc_INCLUDE_DNSFORWARDER is not set
 # CONFIG_PACKAGE_luci-app-turboacc_INCLUDE_DNSPROXY is not set
 CONFIG_PACKAGE_luci-app-ddns=y
+CONFIG_PACKAGE_luci-app-ddn-go=y
 # CONFIG_PACKAGE_luci-app-ddnsto is not set
+CONFIG_PACKAGE_luci-app-xlnetacc=y
 
 # 3G/4G Support
 CONFIG_PACKAGE_comgt-ncm=y
