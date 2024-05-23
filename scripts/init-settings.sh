@@ -14,4 +14,4 @@ pwd
  sudo locate files/etc/config/smartdns
 
 # 导入配置文件
-cp -R -f files/* package/base-files/files/
+cp -R -f ../files/* package/base-files/files/
