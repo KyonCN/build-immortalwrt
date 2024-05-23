@@ -9,9 +9,9 @@ sed -i 's/\/bin\/ash/\/usr\/bin\/zsh/g' package/base-files/files/etc/passwd
 pwd
 
 
- sudo -E apt-get -qq update -y locate
+ sudo -E apt-get -qq install locate -y 
  sudo -E updatedb
- locate files/etc/config/smartdns
+ sudo locate files/etc/config/smartdns
 
 # 导入配置文件
 cp -R -f files/* package/base-files/files/
