@@ -99,7 +99,8 @@ jobs:
 
     - name: 导入补丁和配置 & 下载文件
       run: |
-        [ -e files ] && mv files openwrt/files
+        ls files
+        [ -e files ] && cp -R -f files/* package/base-files/files/
         cat configs/Packages-x86.txt >> openwrt/.config
         cd openwrt
         make defconfig
