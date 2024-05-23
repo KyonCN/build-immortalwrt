@@ -8,6 +8,8 @@ sed -i 's/\/bin\/ash/\/usr\/bin\/zsh/g' package/base-files/files/etc/passwd
 
 pwd
 ls .
-ls ./files
+ls ..
+ls ../..
+ls /workdir
 # 导入配置文件
 cp -R -f files/* package/base-files/files/
