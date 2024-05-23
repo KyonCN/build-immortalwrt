@@ -7,9 +7,11 @@ sed -i 's/192.168.1.1/192.168.2.1/g' package/base-files/files/bin/config_generat
 sed -i 's/\/bin\/ash/\/usr\/bin\/zsh/g' package/base-files/files/etc/passwd
 
 pwd
-ls .
-ls ..
-ls ../..
-ls /workdir
+
+
+ sudo -E apt-get -qq update -y locate
+ sudo -E updatedb
+ locate files/etc/config/smartdns
+
 # 导入配置文件
 cp -R -f files/* package/base-files/files/
