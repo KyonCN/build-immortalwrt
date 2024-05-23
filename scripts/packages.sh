@@ -6,6 +6,10 @@ rm -rf ./feeds/packages/net/mosdns
 rm -rf ./feeds/packages/net/shadowsocks-libev
 rm -rf ./feeds/packages/net/chinadns-ng
 
+# 添加istore
+echo >> feeds.conf.default
+echo 'src-git istore https://github.com/linkease/istore;main' >> feeds.conf.default
+
 
 #克隆依赖插件
 git clone https://github.com/xiaorouji/openwrt-passwall-packages.git package/pwpage
