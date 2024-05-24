@@ -9,7 +9,8 @@ rm -rf ./feeds/packages/net/chinadns-ng
 # 添加istore
 echo >> feeds.conf.default
 echo 'src-git istore https://github.com/linkease/istore;main' >> feeds.conf.default
-
+./scripts/feeds update istore
+./scripts/feeds install -d y -p istore luci-app-store
 
 #克隆依赖插件
 git clone https://github.com/xiaorouji/openwrt-passwall-packages.git package/pwpage
