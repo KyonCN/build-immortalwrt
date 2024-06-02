@@ -109,7 +109,7 @@ jobs:
       run: |
         cat >> openwrt/.config
         cat configs/Packages-bpi-r4.txt >> openwrt/.config
-        sed -i '/CONFIG_PACKAGE_luci-app-ssr-plus/d' openwrt/.config
+        sed -i '/ssr-plus/d' openwrt/.config
         cd openwrt
         make defconfig
         make download -j8 V=10
