@@ -30,6 +30,7 @@ env:
   CLASH_CORE_SH: scripts/preset-clash-core-amd64.sh
   TERMINAL_SH: scripts/preset-terminal-tools.sh
   ADGUARD_CORE_SH: scripts/preset-adguard-core.sh
+  CLASH_KERNEL: amd64
   UPLOAD_BIN_DIR: false
   UPLOAD_FIRMWARE: false
   UPLOAD_RELEASE: true
@@ -94,7 +95,7 @@ jobs:
         chmod +x $GITHUB_WORKSPACE/$PACKAGES_SH && $GITHUB_WORKSPACE/$PACKAGES_SH
         chmod +x $GITHUB_WORKSPACE/$CLASH_CORE_SH && $GITHUB_WORKSPACE/$CLASH_CORE_SH
         chmod +x $GITHUB_WORKSPACE/$TERMINAL_SH && $GITHUB_WORKSPACE/$TERMINAL_SH
-        chmod +x $GITHUB_WORKSPACE/$ADGUARD_CORE_SH && $GITHUB_WORKSPACE/$ADGUARD_CORE_SH
+        chmod +x $GITHUB_WORKSPACE/$ADGUARD_CORE_SH && $GITHUB_WORKSPACE/$ADGUARD_CORE_SH $CLASH_KERNEL
         ./scripts/feeds install -a && ./scripts/feeds install -a
 
     - name: 导入补丁和配置 & 下载文件
